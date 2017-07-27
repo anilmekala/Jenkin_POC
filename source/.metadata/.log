@@ -1,0 +1,709 @@
+!SESSION 2017-05-30 16:01:17.862 -----------------------------------------------
+eclipse.buildId=4.2.2.M20140918-1444
+java.fullversion=JRE 1.7.0 IBM J9 2.7 Windows 7 amd64-64 Compressed References 20161005_321280 (JIT enabled, AOT enabled)
+J9VM - R27_Java727_SR3_20161005_1253_B321280
+JIT  - tr.r13.java_20161003_125478
+GC   - R27_Java727_SR3_20161005_1253_B321280_CMPRSS
+J9CL - 20161005_321280
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -data D:\Jenkins_POC\source -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+
+!ENTRY org.eclipse.equinox.registry 2 0 2017-05-30 16:01:41.092
+!MESSAGE The extensions and extension-points from the bundle "org.eclipse.emf.commonj.sdo" are ignored. The bundle is not marked as singleton. 
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-05-30 16:01:45.808
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2017-05-30 16:01:49.325
+!MESSAGE 
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 16:01:54.556
+!MESSAGE NLS missing message: Messages_EnumValue_BlockFinal_empty in: com.ibm.etools.msg.coremodel.utilities.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 16:01:56.631
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorSchemaInAppImportSchemaInSharedLib in: com.ibm.etools.msg.builder.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 16:01:56.631
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorProjectReferenceIsMissing in: com.ibm.etools.msg.builder.messages
+!SESSION 2017-05-30 16:56:14.099 -----------------------------------------------
+eclipse.buildId=4.2.2.M20140918-1444
+java.fullversion=JRE 1.7.0 IBM J9 2.7 Windows 7 amd64-64 Compressed References 20161005_321280 (JIT enabled, AOT enabled)
+J9VM - R27_Java727_SR3_20161005_1253_B321280
+JIT  - tr.r13.java_20161003_125478
+GC   - R27_Java727_SR3_20161005_1253_B321280_CMPRSS
+J9CL - 20161005_321280
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -data D:\Jenkins_POC\source -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-30 16:56:19.083
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-05-30 16:56:20.048
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2017-05-30 16:56:27.489
+!MESSAGE 
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 16:56:30.880
+!MESSAGE NLS missing message: Messages_EnumValue_BlockFinal_empty in: com.ibm.etools.msg.coremodel.utilities.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 16:56:35.216
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorSchemaInAppImportSchemaInSharedLib in: com.ibm.etools.msg.builder.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 16:56:35.216
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorProjectReferenceIsMissing in: com.ibm.etools.msg.builder.messages
+
+!ENTRY org.eclipse.equinox.ds 2 0 2017-05-30 16:57:19.821
+!MESSAGE Getting a lock required more than 10000 ms. There might be a synchronization problem in this callstack or just the build/dispose process of some components took too long! 
+!STACK 0
+java.lang.Exception: Debug stacktrace
+	at org.eclipse.equinox.internal.ds.InstanceProcess.getLock(InstanceProcess.java:120)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponent(InstanceProcess.java:560)
+	at org.eclipse.equinox.internal.ds.ServiceReg.getService(ServiceReg.java:53)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceUse$1.run(ServiceUse.java:141)
+	at java.security.AccessController.doPrivileged(AccessController.java:396)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceUse.getService(ServiceUse.java:139)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:468)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:467)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.getService(BundleContextImpl.java:594)
+	at org.eclipse.equinox.internal.p2.core.ProvisioningAgent.addingService(ProvisioningAgent.java:159)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:932)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:183)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:317)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:261)
+	at org.eclipse.equinox.internal.p2.core.ProvisioningAgent.getService(ProvisioningAgent.java:66)
+	at org.eclipse.pde.internal.core.target.P2TargetUtils.getAgent(P2TargetUtils.java:313)
+	at org.eclipse.pde.internal.core.target.P2TargetUtils.getProfileRegistry(P2TargetUtils.java:803)
+	at org.eclipse.pde.internal.core.target.P2TargetUtils.cleanOrphanedTargetDefinitionProfiles(P2TargetUtils.java:164)
+	at org.eclipse.pde.internal.core.PDECore$1.saving(PDECore.java:284)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:383)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:192)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:195)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1130)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1109)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2017-05-30 16:59:32.799 -----------------------------------------------
+eclipse.buildId=4.2.2.M20140918-1444
+java.fullversion=JRE 1.7.0 IBM J9 2.7 Windows 7 amd64-64 Compressed References 20161005_321280 (JIT enabled, AOT enabled)
+J9VM - R27_Java727_SR3_20161005_1253_B321280
+JIT  - tr.r13.java_20161003_125478
+GC   - R27_Java727_SR3_20161005_1253_B321280_CMPRSS
+J9CL - 20161005_321280
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -data D:\Jenkins_POC\source -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-30 16:59:34.067
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-05-30 16:59:34.273
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2017-05-30 16:59:37.107
+!MESSAGE 
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 16:59:39.004
+!MESSAGE NLS missing message: Messages_EnumValue_BlockFinal_empty in: com.ibm.etools.msg.coremodel.utilities.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 16:59:40.427
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorSchemaInAppImportSchemaInSharedLib in: com.ibm.etools.msg.builder.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 16:59:40.427
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorProjectReferenceIsMissing in: com.ibm.etools.msg.builder.messages
+!SESSION 2017-05-30 17:02:07.774 -----------------------------------------------
+eclipse.buildId=4.2.2.M20140918-1444
+java.fullversion=JRE 1.7.0 IBM J9 2.7 Windows 7 amd64-64 Compressed References 20161005_321280 (JIT enabled, AOT enabled)
+J9VM - R27_Java727_SR3_20161005_1253_B321280
+JIT  - tr.r13.java_20161003_125478
+GC   - R27_Java727_SR3_20161005_1253_B321280_CMPRSS
+J9CL - 20161005_321280
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -data D:\Jenkins_POC\source -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-30 17:02:09.051
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-05-30 17:02:09.260
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2017-05-30 17:02:12.108
+!MESSAGE 
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 17:02:14.172
+!MESSAGE NLS missing message: Messages_EnumValue_BlockFinal_empty in: com.ibm.etools.msg.coremodel.utilities.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 17:02:15.808
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorSchemaInAppImportSchemaInSharedLib in: com.ibm.etools.msg.builder.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 17:02:15.808
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorProjectReferenceIsMissing in: com.ibm.etools.msg.builder.messages
+!SESSION 2017-05-30 17:05:48.664 -----------------------------------------------
+eclipse.buildId=4.2.2.M20140918-1444
+java.fullversion=JRE 1.7.0 IBM J9 2.7 Windows 7 amd64-64 Compressed References 20161005_321280 (JIT enabled, AOT enabled)
+J9VM - R27_Java727_SR3_20161005_1253_B321280
+JIT  - tr.r13.java_20161003_125478
+GC   - R27_Java727_SR3_20161005_1253_B321280_CMPRSS
+J9CL - 20161005_321280
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -data D:\Jenkins_POC\source -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-30 17:05:49.955
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-05-30 17:05:50.164
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2017-05-30 17:05:52.958
+!MESSAGE 
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 17:05:54.830
+!MESSAGE NLS missing message: Messages_EnumValue_BlockFinal_empty in: com.ibm.etools.msg.coremodel.utilities.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 17:05:56.237
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorSchemaInAppImportSchemaInSharedLib in: com.ibm.etools.msg.builder.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 17:05:56.238
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorProjectReferenceIsMissing in: com.ibm.etools.msg.builder.messages
+!SESSION 2017-05-30 17:09:25.820 -----------------------------------------------
+eclipse.buildId=4.2.2.M20140918-1444
+java.fullversion=JRE 1.7.0 IBM J9 2.7 Windows 7 amd64-64 Compressed References 20161005_321280 (JIT enabled, AOT enabled)
+J9VM - R27_Java727_SR3_20161005_1253_B321280
+JIT  - tr.r13.java_20161003_125478
+GC   - R27_Java727_SR3_20161005_1253_B321280_CMPRSS
+J9CL - 20161005_321280
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -data D:\Jenkins_POC\source -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-30 17:09:27.134
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-05-30 17:09:27.352
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2017-05-30 17:09:30.746
+!MESSAGE 
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 17:09:32.728
+!MESSAGE NLS missing message: Messages_EnumValue_BlockFinal_empty in: com.ibm.etools.msg.coremodel.utilities.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 17:09:34.211
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorSchemaInAppImportSchemaInSharedLib in: com.ibm.etools.msg.builder.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 17:09:34.212
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorProjectReferenceIsMissing in: com.ibm.etools.msg.builder.messages
+!SESSION 2017-05-30 17:16:26.242 -----------------------------------------------
+eclipse.buildId=4.2.2.M20140918-1444
+java.fullversion=JRE 1.7.0 IBM J9 2.7 Windows 7 amd64-64 Compressed References 20161005_321280 (JIT enabled, AOT enabled)
+J9VM - R27_Java727_SR3_20161005_1253_B321280
+JIT  - tr.r13.java_20161003_125478
+GC   - R27_Java727_SR3_20161005_1253_B321280_CMPRSS
+J9CL - 20161005_321280
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -data D:\Jenkins_POC\source -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-30 17:16:27.490
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-05-30 17:16:27.701
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2017-05-30 17:16:30.911
+!MESSAGE 
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 17:16:32.741
+!MESSAGE NLS missing message: Messages_EnumValue_BlockFinal_empty in: com.ibm.etools.msg.coremodel.utilities.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 17:16:34.083
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorSchemaInAppImportSchemaInSharedLib in: com.ibm.etools.msg.builder.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 17:16:34.083
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorProjectReferenceIsMissing in: com.ibm.etools.msg.builder.messages
+!SESSION 2017-05-30 17:23:51.958 -----------------------------------------------
+eclipse.buildId=4.2.2.M20140918-1444
+java.fullversion=JRE 1.7.0 IBM J9 2.7 Windows 7 amd64-64 Compressed References 20161005_321280 (JIT enabled, AOT enabled)
+J9VM - R27_Java727_SR3_20161005_1253_B321280
+JIT  - tr.r13.java_20161003_125478
+GC   - R27_Java727_SR3_20161005_1253_B321280_CMPRSS
+J9CL - 20161005_321280
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -data D:\Jenkins_POC\source -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-30 17:23:53.259
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-05-30 17:23:53.446
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2017-05-30 17:23:56.623
+!MESSAGE 
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 17:23:58.456
+!MESSAGE NLS missing message: Messages_EnumValue_BlockFinal_empty in: com.ibm.etools.msg.coremodel.utilities.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 17:23:59.762
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorSchemaInAppImportSchemaInSharedLib in: com.ibm.etools.msg.builder.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 17:23:59.762
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorProjectReferenceIsMissing in: com.ibm.etools.msg.builder.messages
+!SESSION 2017-05-30 17:25:57.506 -----------------------------------------------
+eclipse.buildId=4.2.2.M20140918-1444
+java.fullversion=JRE 1.7.0 IBM J9 2.7 Windows 7 amd64-64 Compressed References 20161005_321280 (JIT enabled, AOT enabled)
+J9VM - R27_Java727_SR3_20161005_1253_B321280
+JIT  - tr.r13.java_20161003_125478
+GC   - R27_Java727_SR3_20161005_1253_B321280_CMPRSS
+J9CL - 20161005_321280
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -data D:\Jenkins_POC\source -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-30 17:25:58.720
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-05-30 17:25:58.923
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2017-05-30 17:26:02.167
+!MESSAGE 
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 17:26:04.084
+!MESSAGE NLS missing message: Messages_EnumValue_BlockFinal_empty in: com.ibm.etools.msg.coremodel.utilities.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 17:26:05.413
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorSchemaInAppImportSchemaInSharedLib in: com.ibm.etools.msg.builder.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 17:26:05.413
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorProjectReferenceIsMissing in: com.ibm.etools.msg.builder.messages
+!SESSION 2017-05-30 17:28:55.652 -----------------------------------------------
+eclipse.buildId=4.2.2.M20140918-1444
+java.fullversion=JRE 1.7.0 IBM J9 2.7 Windows 7 amd64-64 Compressed References 20161005_321280 (JIT enabled, AOT enabled)
+J9VM - R27_Java727_SR3_20161005_1253_B321280
+JIT  - tr.r13.java_20161003_125478
+GC   - R27_Java727_SR3_20161005_1253_B321280_CMPRSS
+J9CL - 20161005_321280
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -data D:\Jenkins_POC\source -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-30 17:28:56.937
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-05-30 17:28:57.139
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2017-05-30 17:29:00.344
+!MESSAGE 
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 17:29:02.237
+!MESSAGE NLS missing message: Messages_EnumValue_BlockFinal_empty in: com.ibm.etools.msg.coremodel.utilities.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 17:29:03.575
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorSchemaInAppImportSchemaInSharedLib in: com.ibm.etools.msg.builder.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 17:29:03.575
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorProjectReferenceIsMissing in: com.ibm.etools.msg.builder.messages
+!SESSION 2017-05-30 18:09:40.255 -----------------------------------------------
+eclipse.buildId=4.2.2.M20140918-1444
+java.fullversion=JRE 1.7.0 IBM J9 2.7 Windows 7 amd64-64 Compressed References 20161005_321280 (JIT enabled, AOT enabled)
+J9VM - R27_Java727_SR3_20161005_1253_B321280
+JIT  - tr.r13.java_20161003_125478
+GC   - R27_Java727_SR3_20161005_1253_B321280_CMPRSS
+J9CL - 20161005_321280
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -data D:\Jenkins_POC\source -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-30 18:09:46.297
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-05-30 18:09:47.405
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2017-05-30 18:09:55.668
+!MESSAGE 
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 18:09:59.290
+!MESSAGE NLS missing message: Messages_EnumValue_BlockFinal_empty in: com.ibm.etools.msg.coremodel.utilities.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 18:10:03.973
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorSchemaInAppImportSchemaInSharedLib in: com.ibm.etools.msg.builder.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 18:10:03.973
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorProjectReferenceIsMissing in: com.ibm.etools.msg.builder.messages
+!SESSION 2017-05-30 18:14:18.760 -----------------------------------------------
+eclipse.buildId=4.2.2.M20140918-1444
+java.fullversion=JRE 1.7.0 IBM J9 2.7 Windows 7 amd64-64 Compressed References 20161005_321280 (JIT enabled, AOT enabled)
+J9VM - R27_Java727_SR3_20161005_1253_B321280
+JIT  - tr.r13.java_20161003_125478
+GC   - R27_Java727_SR3_20161005_1253_B321280_CMPRSS
+J9CL - 20161005_321280
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -data D:\Jenkins_POC\source -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-30 18:14:20.088
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-05-30 18:14:20.290
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2017-05-30 18:14:23.491
+!MESSAGE 
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 18:14:25.285
+!MESSAGE NLS missing message: Messages_EnumValue_BlockFinal_empty in: com.ibm.etools.msg.coremodel.utilities.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 18:14:26.658
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorSchemaInAppImportSchemaInSharedLib in: com.ibm.etools.msg.builder.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 18:14:26.658
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorProjectReferenceIsMissing in: com.ibm.etools.msg.builder.messages
+!SESSION 2017-05-30 18:17:51.298 -----------------------------------------------
+eclipse.buildId=4.2.2.M20140918-1444
+java.fullversion=JRE 1.7.0 IBM J9 2.7 Windows 7 amd64-64 Compressed References 20161005_321280 (JIT enabled, AOT enabled)
+J9VM - R27_Java727_SR3_20161005_1253_B321280
+JIT  - tr.r13.java_20161003_125478
+GC   - R27_Java727_SR3_20161005_1253_B321280_CMPRSS
+J9CL - 20161005_321280
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -data D:\Jenkins_POC\source -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-30 18:17:52.478
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-05-30 18:17:52.696
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2017-05-30 18:17:55.881
+!MESSAGE 
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 18:17:57.817
+!MESSAGE NLS missing message: Messages_EnumValue_BlockFinal_empty in: com.ibm.etools.msg.coremodel.utilities.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 18:17:59.206
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorSchemaInAppImportSchemaInSharedLib in: com.ibm.etools.msg.builder.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 18:17:59.206
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorProjectReferenceIsMissing in: com.ibm.etools.msg.builder.messages
+!SESSION 2017-05-30 18:19:07.948 -----------------------------------------------
+eclipse.buildId=4.2.2.M20140918-1444
+java.fullversion=JRE 1.7.0 IBM J9 2.7 Windows 7 amd64-64 Compressed References 20161005_321280 (JIT enabled, AOT enabled)
+J9VM - R27_Java727_SR3_20161005_1253_B321280
+JIT  - tr.r13.java_20161003_125478
+GC   - R27_Java727_SR3_20161005_1253_B321280_CMPRSS
+J9CL - 20161005_321280
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -data D:\Jenkins_POC\source -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-30 18:19:09.149
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-05-30 18:19:09.336
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2017-05-30 18:19:12.519
+!MESSAGE 
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 18:19:14.336
+!MESSAGE NLS missing message: Messages_EnumValue_BlockFinal_empty in: com.ibm.etools.msg.coremodel.utilities.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 18:19:15.740
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorSchemaInAppImportSchemaInSharedLib in: com.ibm.etools.msg.builder.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 18:19:15.740
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorProjectReferenceIsMissing in: com.ibm.etools.msg.builder.messages
+!SESSION 2017-05-30 19:53:59.109 -----------------------------------------------
+eclipse.buildId=4.2.2.M20140918-1444
+java.fullversion=JRE 1.7.0 IBM J9 2.7 Windows 7 amd64-64 Compressed References 20161005_321280 (JIT enabled, AOT enabled)
+J9VM - R27_Java727_SR3_20161005_1253_B321280
+JIT  - tr.r13.java_20161003_125478
+GC   - R27_Java727_SR3_20161005_1253_B321280_CMPRSS
+J9CL - 20161005_321280
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -data D:\Jenkins_POC\source -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-30 19:54:04.352
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-05-30 19:54:05.337
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2017-05-30 19:54:13.065
+!MESSAGE 
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 19:54:16.502
+!MESSAGE NLS missing message: Messages_EnumValue_BlockFinal_empty in: com.ibm.etools.msg.coremodel.utilities.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 19:54:20.916
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorSchemaInAppImportSchemaInSharedLib in: com.ibm.etools.msg.builder.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 19:54:20.916
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorProjectReferenceIsMissing in: com.ibm.etools.msg.builder.messages
+!SESSION 2017-05-30 20:10:17.977 -----------------------------------------------
+eclipse.buildId=4.2.2.M20140918-1444
+java.fullversion=JRE 1.7.0 IBM J9 2.7 Windows 7 amd64-64 Compressed References 20161005_321280 (JIT enabled, AOT enabled)
+J9VM - R27_Java727_SR3_20161005_1253_B321280
+JIT  - tr.r13.java_20161003_125478
+GC   - R27_Java727_SR3_20161005_1253_B321280_CMPRSS
+J9CL - 20161005_321280
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -data D:\Jenkins_POC\source -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-30 20:10:19.272
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-05-30 20:10:19.475
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2017-05-30 20:10:22.673
+!MESSAGE 
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 20:10:24.518
+!MESSAGE NLS missing message: Messages_EnumValue_BlockFinal_empty in: com.ibm.etools.msg.coremodel.utilities.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 20:10:25.859
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorSchemaInAppImportSchemaInSharedLib in: com.ibm.etools.msg.builder.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 20:10:25.859
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorProjectReferenceIsMissing in: com.ibm.etools.msg.builder.messages
+!SESSION 2017-05-30 21:05:40.093 -----------------------------------------------
+eclipse.buildId=4.2.2.M20140918-1444
+java.fullversion=JRE 1.7.0 IBM J9 2.7 Windows 7 amd64-64 Compressed References 20161005_321280 (JIT enabled, AOT enabled)
+J9VM - R27_Java727_SR3_20161005_1253_B321280
+JIT  - tr.r13.java_20161003_125478
+GC   - R27_Java727_SR3_20161005_1253_B321280_CMPRSS
+J9CL - 20161005_321280
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -data D:\Jenkins_POC\source -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-30 21:05:41.395
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-05-30 21:05:41.627
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2017-05-30 21:05:45.021
+!MESSAGE 
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 21:05:46.966
+!MESSAGE NLS missing message: Messages_EnumValue_BlockFinal_empty in: com.ibm.etools.msg.coremodel.utilities.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 21:05:48.421
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorSchemaInAppImportSchemaInSharedLib in: com.ibm.etools.msg.builder.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 21:05:48.422
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorProjectReferenceIsMissing in: com.ibm.etools.msg.builder.messages
+!SESSION 2017-05-30 21:11:45.458 -----------------------------------------------
+eclipse.buildId=4.2.2.M20140918-1444
+java.fullversion=JRE 1.7.0 IBM J9 2.7 Windows 7 amd64-64 Compressed References 20161005_321280 (JIT enabled, AOT enabled)
+J9VM - R27_Java727_SR3_20161005_1253_B321280
+JIT  - tr.r13.java_20161003_125478
+GC   - R27_Java727_SR3_20161005_1253_B321280_CMPRSS
+J9CL - 20161005_321280
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -data D:\Jenkins_POC\source -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-30 21:11:46.720
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-05-30 21:11:46.922
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2017-05-30 21:11:50.107
+!MESSAGE 
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 21:11:51.935
+!MESSAGE NLS missing message: Messages_EnumValue_BlockFinal_empty in: com.ibm.etools.msg.coremodel.utilities.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 21:11:53.260
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorSchemaInAppImportSchemaInSharedLib in: com.ibm.etools.msg.builder.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-30 21:11:53.260
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorProjectReferenceIsMissing in: com.ibm.etools.msg.builder.messages
+!SESSION 2017-05-31 10:56:37.925 -----------------------------------------------
+eclipse.buildId=4.2.2.M20140918-1444
+java.fullversion=JRE 1.7.0 IBM J9 2.7 Windows 7 amd64-64 Compressed References 20161005_321280 (JIT enabled, AOT enabled)
+J9VM - R27_Java727_SR3_20161005_1253_B321280
+JIT  - tr.r13.java_20161003_125478
+GC   - R27_Java727_SR3_20161005_1253_B321280_CMPRSS
+J9CL - 20161005_321280
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -data D:\Jenkins_POC\source -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-31 10:56:39.287
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-05-31 10:56:39.529
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2017-05-31 10:56:42.851
+!MESSAGE 
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-31 10:56:44.714
+!MESSAGE NLS missing message: Messages_EnumValue_BlockFinal_empty in: com.ibm.etools.msg.coremodel.utilities.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-31 10:56:46.211
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorSchemaInAppImportSchemaInSharedLib in: com.ibm.etools.msg.builder.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-31 10:56:46.211
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorProjectReferenceIsMissing in: com.ibm.etools.msg.builder.messages
+!SESSION 2017-05-31 11:01:11.242 -----------------------------------------------
+eclipse.buildId=4.2.2.M20140918-1444
+java.fullversion=JRE 1.7.0 IBM J9 2.7 Windows 7 amd64-64 Compressed References 20161005_321280 (JIT enabled, AOT enabled)
+J9VM - R27_Java727_SR3_20161005_1253_B321280
+JIT  - tr.r13.java_20161003_125478
+GC   - R27_Java727_SR3_20161005_1253_B321280_CMPRSS
+J9CL - 20161005_321280
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -data D:\Jenkins_POC\source -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-31 11:01:12.848
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-05-31 11:01:13.082
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2017-05-31 11:01:16.535
+!MESSAGE 
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-31 11:01:18.726
+!MESSAGE NLS missing message: Messages_EnumValue_BlockFinal_empty in: com.ibm.etools.msg.coremodel.utilities.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-31 11:01:20.237
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorSchemaInAppImportSchemaInSharedLib in: com.ibm.etools.msg.builder.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-31 11:01:20.237
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorProjectReferenceIsMissing in: com.ibm.etools.msg.builder.messages
+!SESSION 2017-05-31 14:54:55.906 -----------------------------------------------
+eclipse.buildId=4.2.2.M20140918-1444
+java.fullversion=JRE 1.7.0 IBM J9 2.7 Windows 7 amd64-64 Compressed References 20161005_321280 (JIT enabled, AOT enabled)
+J9VM - R27_Java727_SR3_20161005_1253_B321280
+JIT  - tr.r13.java_20161003_125478
+GC   - R27_Java727_SR3_20161005_1253_B321280_CMPRSS
+J9CL - 20161005_321280
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -data D:\Jenkins_POC\source -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+
+!ENTRY org.eclipse.equinox.registry 2 0 2017-05-31 14:55:26.876
+!MESSAGE The extensions and extension-points from the bundle "org.eclipse.emf.commonj.sdo" are ignored. The bundle is not marked as singleton. 
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-31 14:55:33.037
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-05-31 14:55:33.748
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2017-05-31 14:55:38.641
+!MESSAGE 
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-31 14:55:40.698
+!MESSAGE NLS missing message: Messages_EnumValue_BlockFinal_empty in: com.ibm.etools.msg.coremodel.utilities.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-31 14:55:43.369
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorSchemaInAppImportSchemaInSharedLib in: com.ibm.etools.msg.builder.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-31 14:55:43.369
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorProjectReferenceIsMissing in: com.ibm.etools.msg.builder.messages
+!SESSION 2017-05-31 15:13:13.759 -----------------------------------------------
+eclipse.buildId=4.2.2.M20140918-1444
+java.fullversion=JRE 1.7.0 IBM J9 2.7 Windows 7 amd64-64 Compressed References 20161005_321280 (JIT enabled, AOT enabled)
+J9VM - R27_Java727_SR3_20161005_1253_B321280
+JIT  - tr.r13.java_20161003_125478
+GC   - R27_Java727_SR3_20161005_1253_B321280_CMPRSS
+J9CL - 20161005_321280
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -data D:\Jenkins_POC\source -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-31 15:13:14.997
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-05-31 15:13:15.221
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2017-05-31 15:13:18.700
+!MESSAGE 
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-31 15:13:20.491
+!MESSAGE NLS missing message: Messages_EnumValue_BlockFinal_empty in: com.ibm.etools.msg.coremodel.utilities.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-31 15:13:22.441
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorSchemaInAppImportSchemaInSharedLib in: com.ibm.etools.msg.builder.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-31 15:13:22.441
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorProjectReferenceIsMissing in: com.ibm.etools.msg.builder.messages
+!SESSION 2017-05-31 16:26:23.053 -----------------------------------------------
+eclipse.buildId=4.2.2.M20140918-1444
+java.fullversion=JRE 1.7.0 IBM J9 2.7 Windows 7 amd64-64 Compressed References 20161005_321280 (JIT enabled, AOT enabled)
+J9VM - R27_Java727_SR3_20161005_1253_B321280
+JIT  - tr.r13.java_20161003_125478
+GC   - R27_Java727_SR3_20161005_1253_B321280_CMPRSS
+J9CL - 20161005_321280
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -data D:\Jenkins_POC\source -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-31 16:26:25.327
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-05-31 16:26:25.718
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2017-05-31 16:26:30.374
+!MESSAGE 
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-31 16:26:32.919
+!MESSAGE NLS missing message: Messages_EnumValue_BlockFinal_empty in: com.ibm.etools.msg.coremodel.utilities.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-31 16:26:35.992
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorSchemaInAppImportSchemaInSharedLib in: com.ibm.etools.msg.builder.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-31 16:26:35.993
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorProjectReferenceIsMissing in: com.ibm.etools.msg.builder.messages
+!SESSION 2017-05-31 16:37:04.614 -----------------------------------------------
+eclipse.buildId=4.2.2.M20140918-1444
+java.fullversion=JRE 1.7.0 IBM J9 2.7 Windows 7 amd64-64 Compressed References 20161005_321280 (JIT enabled, AOT enabled)
+J9VM - R27_Java727_SR3_20161005_1253_B321280
+JIT  - tr.r13.java_20161003_125478
+GC   - R27_Java727_SR3_20161005_1253_B321280_CMPRSS
+J9CL - 20161005_321280
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -data D:\Jenkins_POC\source -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-05-31 16:37:06.047
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-05-31 16:37:06.332
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2017-05-31 16:37:09.940
+!MESSAGE 
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-31 16:37:11.954
+!MESSAGE NLS missing message: Messages_EnumValue_BlockFinal_empty in: com.ibm.etools.msg.coremodel.utilities.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-31 16:37:13.460
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorSchemaInAppImportSchemaInSharedLib in: com.ibm.etools.msg.builder.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-05-31 16:37:13.460
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorProjectReferenceIsMissing in: com.ibm.etools.msg.builder.messages

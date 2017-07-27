@@ -1,0 +1,61 @@
+Summary of selections: WSDL files generation
+
+The selected message set:
+/sample_MSET/sample_MSET
+
+The generated WSDL files will go into:
+/sample_MSET/sample_MSET
+
+The version of WSDL to be generated: 1.1
+The version of SOAP to be generated: 1.1
+
+The selected style for WSDL generation: document
+The WSDL Namespace: somenamespace
+
+The following operations will be created:
+Operation1 (Request-Response)
+
+The following bindings are selected:
+SOAP over http.
+
+The following WSDL files will be generated:
+/sample_MSET/sample_MSET/sample_MSETService.wsdl
+
+
+Generating XML Schema files from Message Definition files
+Generating schema for no XML Wire format
+Generating schema using the strict option
+All complex types and groups with a Content validation of "Open" or "Open defined" will be generated as if they had Content validation "Closed"
+All complex types and groups with a Composition of "Ordered set" or "Unordered set" will be generated with a Composition of "Sequence"
+All complex types and groups with a Composition of "Message" will be generated with a Composition of "Choice"
+
+
+Processing File : "/sample_MSET/sample_MSET/net/mrmnames/www/sample_msgdef.mxsd"
+
+Saving File : "/sample_MSET/sample_MSET/somenamespace/net/mrmnames/www/sample_msgdef.xsd" 
+
+Generating XML Schema file \sample_MSET\sample_MSET\net\mrmnames\www\sample_msgdef.mxsd from Message Definition file \sample_MSET\sample_MSET\somenamespace\net\mrmnames\www\sample_msgdef.xsd
+Creating new WSDL Service file '\sample_MSET\sample_MSET\somenamespace\sample_MSETService.wsdl'
+Setting wsdl definition name for 'sample_MSETService.wsdl': sample_MSET
+Setting wsdl definition targetNamespace for 'sample_MSETService.wsdl': somenamespace
+Adding namespace: xmlns for 'sample_MSETService.wsdl':oldtns1=http://www.mrmnames.net
+Adding namespace: xmlns for 'sample_MSETService.wsdl':soap=http://schemas.xmlsoap.org/wsdl/soap/
+Adding namespace: xmlns for 'sample_MSETService.wsdl':xsd=http://www.w3.org/2001/XMLSchema
+Adding namespace: xmlns for 'sample_MSETService.wsdl':wsdl=http://schemas.xmlsoap.org/wsdl/
+Creating new WSDL Interface file '\sample_MSET\sample_MSET\somenamespace\sample_MSETService.wsdl'
+Creating portType for WSDL Interface: sample_MSETPortType
+Creating portType operation 'Operation1'
+Creating message 'Operation1_in'
+Creating message 'Operation1_out'
+Creating SOAP over HTTP binding 'sample_MSETSOAP_HTTP_Binding'
+Creating binding operation 'Operation1' for binding 'sample_MSETSOAP_HTTP_Binding'
+Creating SOAP over HTTP service 'sample_MSETSOAP_HTTP_Service'
+Creating port 'sample_MSETSOAP_HTTP_Port' for service 'sample_MSETSOAP_HTTP_Service'
+
+Elapsed time processing this WSDL definition: 0.171 seconds
+Number of warnings for this WSDL definition: 0
+
+
+Number of files processed: 2
+
+

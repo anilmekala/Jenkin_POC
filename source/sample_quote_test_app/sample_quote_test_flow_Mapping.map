@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><mappingRoot xmlns="http://www.ibm.com/2008/ccl/Mapping" domainID="com.ibm.msl.mapping.xml" domainIDExtension="mb" mainMap="true" targetNamespace="default" version="8.0.5.0" xmlns:map="default">
+    <input path="/sample_MSET/net/mrmnames/www/sample_msgdef.mxsd"/>
+    <output path="/sample_MSET/net/mrmnames/www/sample_msgdef.mxsd"/>
+    <namespaces>
+        <namespace kind="supplement" prefix="io" uri="http://www.mrmnames.net"/>
+    </namespaces>
+    <generation engine="xquery"/>
+    <mappingDeclaration name="sample_quote_test_flow_Mapping">
+        <input namespace="http://www.mrmnames.net" path="mb:msg(request,assembly,,Properties)" var="ComIbmMessageAssembly_request"/>
+        <output namespace="http://www.mrmnames.net" path="mb:msg(response,assembly,XMLNSC,Properties)" var="ComIbmMessageAssembly_response"/>
+        <move>
+            <input path="$ComIbmMessageAssembly_request/Properties"/>
+            <output path="$ComIbmMessageAssembly_response/Properties"/>
+            <override>
+                <assign value="sample_MSET">
+                    <output path="$ComIbmMessageAssembly_response/Properties/MessageSet"/>
+                </assign>
+            </override>
+        </move>
+        <condition>
+            <if>
+                <input path="$ComIbmMessageAssembly_request/request/quoteId" var="quoteId3"/>
+                <output path="$ComIbmMessageAssembly_response/response/quoteId" var="quoteId"/>
+                <output path="$ComIbmMessageAssembly_response/response/value" var="value"/>
+                <test lang="xpath">$quoteId3 = 'IBM'</test>
+                <move>
+                    <input path="$quoteId3/."/>
+                    <output path="$quoteId/."/>
+                </move>
+                <assign value="180">
+                    <output path="$value/."/>
+                </assign>
+            </if>
+            <elseif>
+                <input path="$ComIbmMessageAssembly_request/request/quoteId" var="quoteId4"/>
+                <output path="$ComIbmMessageAssembly_response/response/quoteId" var="quoteId1"/>
+                <output path="$ComIbmMessageAssembly_response/response/value" var="value1"/>
+                <test lang="xpath">$quoteId3 = 'Oracle'</test>
+                <move>
+                    <input path="$quoteId4/."/>
+                    <output path="$quoteId1/."/>
+                </move>
+                <assign value="150">
+                    <output path="$value1/."/>
+                </assign>
+            </elseif>
+            <else>
+                <input path="$ComIbmMessageAssembly_request/request/quoteId"/>
+                <output path="$ComIbmMessageAssembly_response/response/quoteId" var="quoteId2"/>
+                <output path="$ComIbmMessageAssembly_response/response/value" var="value2"/>
+                <move>
+                    <input path="."/>
+                    <output path="$quoteId2/."/>
+                </move>
+                <assign value="0">
+                    <output path="$value2/."/>
+                </assign>
+            </else>
+        </condition>
+    </mappingDeclaration>
+</mappingRoot>

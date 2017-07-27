@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<project name="project" default="run">
+  <target name="run" description="">
+    <property name="toolkit.home" value="C:\Program Files\IBM\IIB\10.0.0.8\tools" />
+        <property name="ant.bars.basedir" value="D:\Jenkins_POC\bar" />
+        <property name="workspaces.dir" value="D:\Jenkins_POC\source" />
+    	<property name="bar1.name" value="${ant.bars.basedir}\sample_quote.bar" />     	
+	<property name="runtime.dir" value="C:\Program Files\IBM\IIB\10.0.0.8\server\bin" />
+	<antcall target="mqsideploybar" />
+  </target>
+
+ 
+  <target name="mqsicreatebar.buildbar">
+    <!--<echo message="Building Broker Archive file: ${bar.name} " /> -->
+	<echo message="Building Broker Archive file: ${bar1.name} " />
+    <exec executable="${toolkit.home}\mqsicreatebar.exe" spawn="false" failonerror="true">
+      <arg value="-data" />
+      <arg value="${workspaces.dir}" />
+      <arg value="-b" />
+      <arg value="${bar1.name}" />
+      <arg value="-cleanBuild" />
+      <arg value="-a" />
+      <arg value="sample_quote_test_app"/> 
+      <arg value="-deployAsSource" />  
+      <arg value="false" />  
+			
+	
+     </exec>
+    <echo message="Completed building Broker Archive file - ${bar1.name} " />
+  </target>
+
+<target name="mqsideploybar" depends="mqsicreatebar.buildbar">
+    <echo message="Deploying Broker Archive file: ${bar1.name} " />
+    
+    <exec executable="${runtime.dir}\mqsideployscript.bat" spawn="false" logError="true" vmlauncher="false" failonerror="true" append="true">
+      <arg value="-n" />    
+      <arg value="D:\Jenkins_POC\broker\sample.broker"/>
+      <arg value="-e" />
+      <arg value="default" />
+      <arg value="-a" />
+      <arg value="D:\Jenkins_POC\bar\sample_quote.bar" />
+    </exec>
+    <echo message="Completed building Broker Archive file - ${bar1.name} " />
+  </target>
+</project>
+ 
