@@ -707,3 +707,48 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -product
 
 !ENTRY org.eclipse.osgi 2 1 2017-05-31 16:37:13.460
 !MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorProjectReferenceIsMissing in: com.ibm.etools.msg.builder.messages
+!SESSION 2017-07-27 18:55:43.013 -----------------------------------------------
+eclipse.buildId=4.2.2.M20140918-1444
+java.fullversion=JRE 1.7.0 IBM J9 2.7 Windows 7 amd64-64 Compressed References 20161005_321280 (JIT enabled, AOT enabled)
+J9VM - R27_Java727_SR3_20161005_1253_B321280
+JIT  - tr.r13.java_20161003_125478
+GC   - R27_Java727_SR3_20161005_1253_B321280_CMPRSS
+J9CL - 20161005_321280
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -data D:\Jenkins_POC\source -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-07-27 18:55:51.597
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-07-27 18:55:53.750
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2017-07-27 18:56:06.706
+!MESSAGE 
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-07-27 18:56:12.578
+!MESSAGE An internal error occurred during: "Integration Bus Validation Build".
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: 
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:110)
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:96)
+	at org.eclipse.core.internal.events.BuildCommand.addBuilder(BuildCommand.java:249)
+	at org.eclipse.core.internal.events.BuildManager.getBuilder(BuildManager.java:539)
+	at org.eclipse.core.internal.events.BuildManager.getBuilder(BuildManager.java:567)
+	at org.eclipse.core.internal.events.BuildManager.getRule(BuildManager.java:1110)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:612)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
+	at com.ibm.etools.mft.builder.BuildSynchronisationListener$ProjectCleanBuildJob.run(BuildSynchronisationListener.java:114)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.osgi 2 1 2017-07-27 18:56:18.032
+!MESSAGE NLS missing message: Messages_EnumValue_BlockFinal_empty in: com.ibm.etools.msg.coremodel.utilities.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-07-27 18:56:27.538
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorSchemaInAppImportSchemaInSharedLib in: com.ibm.etools.msg.builder.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-07-27 18:56:27.538
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorProjectReferenceIsMissing in: com.ibm.etools.msg.builder.messages
