@@ -892,3 +892,31 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -product
 
 !ENTRY org.eclipse.osgi 2 1 2017-07-27 19:25:26.820
 !MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorProjectReferenceIsMissing in: com.ibm.etools.msg.builder.messages
+!SESSION 2017-07-28 17:31:30.542 -----------------------------------------------
+eclipse.buildId=4.2.2.M20140918-1444
+java.fullversion=JRE 1.7.0 IBM J9 2.7 Windows 7 amd64-64 Compressed References 20161005_321280 (JIT enabled, AOT enabled)
+J9VM - R27_Java727_SR3_20161005_1253_B321280
+JIT  - tr.r13.java_20161003_125478
+GC   - R27_Java727_SR3_20161005_1253_B321280_CMPRSS
+J9CL - 20161005_321280
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide -application com.ibm.etools.mft.bar.cmdline.mqsicreatebar -data D:\Jenkins_POC\source -b D:\Jenkins_POC\bar\sample_quote.bar -cleanBuild -a sample_quote_test_app -deployAsSource false
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-07-28 17:31:32.253
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-07-28 17:31:32.558
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2017-07-28 17:31:38.352
+!MESSAGE 
+
+!ENTRY org.eclipse.osgi 2 1 2017-07-28 17:31:41.283
+!MESSAGE NLS missing message: Messages_EnumValue_BlockFinal_empty in: com.ibm.etools.msg.coremodel.utilities.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-07-28 17:31:44.203
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorSchemaInAppImportSchemaInSharedLib in: com.ibm.etools.msg.builder.messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-07-28 17:31:44.203
+!MESSAGE NLS unused message: DFDLXSDResourceBuilder_errorProjectReferenceIsMissing in: com.ibm.etools.msg.builder.messages
